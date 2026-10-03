@@ -1,0 +1,24 @@
+{
+  "name": "ordered-merkle-proof-backend",
+  "version": "1.0.0",
+  "description": "本地有序数据清单 Merkle 包含证明服务（TypeScript + Node.js + SQLite，仅 API 与 CLI）",
+  "type": "module",
+  "main": "dist/server.js",
+  "bin": {
+    "merkledb": "dist/cli.js"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "start": "node dist/src/server.js",
+    "dev": "node --experimental-strip-types src/server.ts",
+    "test": "npm run build && node --test dist/test/*.test.js",
+    "demo": "npm run build && node dist/scripts/demo.js"
+  },
+  "keywords": ["merkle", "proof", "sqlite", "typescript"],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "typescript": "^5.6.0"
+  }
+}

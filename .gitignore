@@ -1,0 +1,8 @@
+
+node_modules/
+dist/
+data/*.db
+data/*.db-*
+data/server.out
+data/server.err
+*.log
